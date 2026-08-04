@@ -24,7 +24,7 @@ export function DeleteDataroomDialog({
   return (
     <Dialog open={dataroom !== null} onOpenChange={onOpenChange}>
       <DialogContent>
-        <DialogHeader>
+        <DialogHeader className="break-all">
           <DialogTitle>Delete "{dataroom?.name}"?</DialogTitle>
           <DialogDescription>
             This permanently deletes the dataroom and everything inside it — all

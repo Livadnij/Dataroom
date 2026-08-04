@@ -70,8 +70,8 @@ export function FilePreviewDialog({
           event.preventDefault();
         }}
       >
-        <DialogHeader className="pr-20 text-left">
-          <DialogTitle className="truncate">{file?.name}</DialogTitle>
+        <DialogHeader className="pr-20 text-left break-all">
+          <DialogTitle>{file?.name}</DialogTitle>
         </DialogHeader>
         {file && (
           <button

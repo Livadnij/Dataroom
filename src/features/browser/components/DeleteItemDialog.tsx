@@ -54,8 +54,10 @@ export function DeleteItemDialog({
   return (
     <Dialog open={item !== null} onOpenChange={onOpenChange}>
       <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Delete "{item?.name}"?</DialogTitle>
+        <DialogHeader className="min-w-0">
+          <DialogTitle className="break-all">
+            Delete "{item?.name}"?
+          </DialogTitle>
           <DialogDescription>
             {item?.kind === "folder"
               ? describeFolderImpact()
